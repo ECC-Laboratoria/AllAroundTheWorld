@@ -1,6 +1,6 @@
 # Week 3
 
-[Prework](www.example.com)
+[Prework](https://github.com/ECC-Laboratoria/AllAroundTheWorld/tree/master/Week3/Prework)
 
 ----
 
