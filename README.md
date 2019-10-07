@@ -37,11 +37,11 @@ Dentro de la sección de preguntas, considera tres tipos de preguntas:
 
 
 
-<img src="images/ss-1.png" alt="icon" style="zoom:50%;" /> <img src="images/ss-2.png" alt="icon" style="zoom:50%;" />
+<img src="images/ss-1.png" alt="icon" style="zoom:20%;" />               <img src="images/ss-2.png" alt="icon" style="zoom:20%;" />
 
-<img src="images/ss-3.png" alt="icon" style="zoom:50%;" /> <img src="images/ss-4.png" alt="icon" style="zoom:50%;" />
+<img src="images/ss-3.png" alt="icon" style="zoom:20%;" />                <img src="images/ss-4.png" alt="icon" style="zoom:20%;" />
 
-<img src="images/ss-5.png" alt="icon" style="zoom:50%;" />
+<img src="images/ss-5.png" alt="icon" style="zoom:20%;" />
 
 
 
