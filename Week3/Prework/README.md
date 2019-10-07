@@ -33,6 +33,7 @@ Al inicio de cada sesión, haremos preguntas sobre el Prework. Les recomendamos 
       2. Set 
       3. Tuples
       4. Arrays vs Sets vs Tuples 
+      5. Dictionaries
    2. **Looping**: 
       1. Todos los ejercicios 
    3. **Structs**
