@@ -2,6 +2,8 @@
 
 [Prework](https://github.com/ECC-Laboratoria/AllAroundTheWorld/tree/master/Week3/Prework)
 
+[Examples](https://github.com/ECC-Laboratoria/AllAroundTheWorld/tree/master/Week3/ExamplesInClass)
+
 ----
 
 Para esta semana vamos a trabajar los siguientes temas: 
