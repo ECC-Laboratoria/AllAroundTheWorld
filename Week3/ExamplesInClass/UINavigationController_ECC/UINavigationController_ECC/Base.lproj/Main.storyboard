@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AaB-tB-dCT">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--RedScreen-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UINavigationController_ECC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whD-1l-8HL">
+                                <rect key="frame" x="149" y="433" width="116" height="30"/>
+                                <state key="normal" title="To Yellow Screen"/>
+                                <connections>
+                                    <segue destination="WUI-gi-1dY" kind="show" id="oHA-4s-QzS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="whD-1l-8HL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BSJ-IB-2cL"/>
+                            <constraint firstItem="whD-1l-8HL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Ifb-CK-RTH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="RedScreen" largeTitleDisplayMode="always" id="48J-io-rX6"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1047.8260869565217" y="129.91071428571428"/>
+        </scene>
+        <!--Yellow Screen -->
+        <scene sceneID="zJl-Ef-Yi7">
+            <objects>
+                <viewController id="WUI-gi-1dY" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eBJ-Ij-NeM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wsq-vH-iTI">
+                                <rect key="frame" x="150" y="433" width="114" height="30"/>
+                                <state key="normal" title="To Green Screen"/>
+                                <connections>
+                                    <segue destination="akf-za-rHs" kind="show" id="YlR-kh-ZGX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Wsq-vH-iTI" firstAttribute="centerX" secondItem="eBJ-Ij-NeM" secondAttribute="centerX" id="95e-QG-NTC"/>
+                            <constraint firstItem="Wsq-vH-iTI" firstAttribute="centerY" secondItem="eBJ-Ij-NeM" secondAttribute="centerY" id="yol-9u-YP4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ch2-g6-UkP"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Yellow Screen " id="Sh0-3G-D6g"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bd3-Nc-ABp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1773.913043478261" y="129.91071428571428"/>
+        </scene>
+        <!--Green Screen-->
+        <scene sceneID="78O-Bp-oI3">
+            <objects>
+                <viewController id="akf-za-rHs" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wb2-z1-VDM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="IRm-fN-3is"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Green Screen" id="gIG-hF-91U">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="w8x-4Y-Aa7">
+                            <connections>
+                                <segue destination="Nkv-ED-Hbf" kind="unwind" unwindAction="returnToRedScreenWithSegue:" id="k3D-hT-xD1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zqh-nW-fnT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="Nkv-ED-Hbf" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2521.739130434783" y="130.58035714285714"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="nL1-gz-JZq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AaB-tB-dCT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="5FN-rs-uOE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="3T0-b8-4hK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P2k-FQ-6Te" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="230" y="130"/>
+        </scene>
+    </scenes>
+</document>
